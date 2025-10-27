@@ -12,7 +12,7 @@ import {
 } from "@tabler/icons-react";
 
 const About = () => {
-  const words = ["scalable", "intuitive", "robust", "innovative"];
+  const words = ["scalabl", "intuitive", "robust", "innovative"];
   const words2 = ["solutions", "experiences", "applications", "platforms"];
     const links = [
     {
