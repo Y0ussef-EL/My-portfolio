@@ -78,17 +78,17 @@ const About = () => {
       className={`${robotoSlab.className} text-gray-300/50 grid grid-cols-1 md:grid-cols-2 gap-6 px-6`}
     >
       {/* Left Section */}
-      <div className="flex flex-col justify-center items-start space-y-4">
-        <div className="text-2xl font-semibold mx-16">
+      <div className="flex flex-col justify-center items-center md:items-start space-y-4">
+        <div className="text-2xl font-semibold text-center md:text-left md:mx-16">
           Hello <span>👋</span>,
         </div>
-        <p className="text-3xl leading-relaxed mx-16">
+        <p className="text-3xl leading-relaxed text-center md:text-left md:mx-16">
           My name is <span className="font-bold">EL AMMARI YOUSSEF</span>, a
           <span className="font-bold"> Software Developer </span> based in
           Morocco, dedicated to crafting beautiful and functional web and mobile
           applications that elevate user experiences.
         </p>
-        <div className="mx-16">
+        <div className="mx-auto md:mx-16">
           <div className=" bg-zinc-600/20 py-4 pt-3 px-3 rounded-2xl min-w-70 h-fit inline-block text-center">
             <div className="flex flex-col">
               <WordRotate
@@ -102,7 +102,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mx-16 flex w-fit pt-6">
+        <div className="mx-auto md:mx-16 flex w-fit pt-6">
           <FloatingDock
         items={links}
       />
