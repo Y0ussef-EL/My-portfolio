@@ -36,50 +36,21 @@ const FloatingDockMobile = ({
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
 }) => {
-  const [open, setOpen] = useState(false);
+  // Mobile: render a horizontal dock similar to desktop, centered and touch-friendly.
   return (
-    <div className={cn("relative block md:hidden", className)}>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            layoutId="nav"
-            className="absolute inset-x-0 bottom-full mb-2 flex flex-col gap-2"
+    <div className={cn("block md:hidden w-full flex justify-center", className)}>
+      <motion.div className="mx-auto flex h-16 items-end gap-4 rounded-2xl bg-transparent px-4 pb-3 dark:bg-neutral-900">
+        {items.map((item) => (
+          <motion.a
+            key={item.title}
+            href={item.href}
+            whileTap={{ scale: 0.95 }}
+            className="relative flex aspect-square items-center justify-center rounded-full bg-white/10 dark:bg-neutral-800 h-10 w-10"
           >
-            {items.map((item, idx) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  y: 10,
-                  transition: {
-                    delay: idx * 0.05,
-                  },
-                }}
-                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
-              >
-                <a
-                  href={item.href}
-                  key={item.title}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-transparent "
-                >
-                  <div className="h-4 w-4">{item.icon}</div>
-                </a>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <button
-        onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-transparent dark:bg-neutral-800"
-      >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
-      </button>
+            <div className="flex items-center justify-center h-4 w-4">{item.icon}</div>
+          </motion.a>
+        ))}
+      </motion.div>
     </div>
   );
 };
