@@ -1,0 +1,62 @@
+[
+  {
+    "icon": "nextjs.svg",
+    "name": "NextJS"
+  },
+  {
+    "icon": "aceternitypng.png",
+    "name": "Aceternity UI"
+  },
+  {
+    "icon": "css.svg",
+    "name": "CSS"
+  },
+  {
+    "icon": "figma.svg",
+    "name": "Figma"
+  },
+  {
+    "icon": "firebase.svg",
+    "name": "Firebase"
+  },
+  {
+    "icon": "git.svg",
+    "name": "Git"
+  },
+  {
+    "icon": "github.svg",
+    "name": "GitHub"
+  },
+  {
+    "icon": "html.svg",
+    "name": "HTML"
+  },
+  {
+    "icon": "javascript.svg",
+    "name": "JavaScript"
+  },
+  {
+    "icon": "mongodb.svg",
+    "name": "MongoDB"
+  },
+  {
+    "icon": "nodejs.svg",
+    "name": "NodeJS"
+  },
+  {
+    "icon": "react.svg",
+    "name": "React"
+  },
+  {
+    "icon": "tailwindcss.svg",
+    "name": "TailwindCSS"
+  },
+  {
+    "icon": "typescript.svg",
+    "name": "TypeScript"
+  },
+  {
+    "icon": "flask.svg",
+    "name": "Flask"
+  }
+]
