@@ -4,6 +4,7 @@ import { robotoSlab } from "@/utils/fonts";
 import { FloatingDock } from "../ui/floating-dock";
 import {
   IconBrandGithub,
+  IconBrandLinkedin,
   IconBrandX,
   IconExchange,
   IconHome,
@@ -14,55 +15,19 @@ import {
 const About = () => {
   const words = ["scalable", "intuitive", "robust", "innovative"];
   const words2 = ["solutions", "experiences", "applications", "platforms"];
-    const links = [
+  const links = [
+    
+
+    
+    
+    
+
     {
-      title: "Home",
+      title: "LinkedIn",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
- 
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
- 
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "https://www.linkedin.com/in/youssef-el-ammari-a733a91b9/",
     },
     {
       title: "GitHub",
@@ -103,9 +68,7 @@ const About = () => {
           </div>
         </div>
         <div className="mx-auto md:mx-16 flex w-fit pt-6">
-          <FloatingDock
-        items={links}
-      />
+          <FloatingDock items={links} />
         </div>
       </div>
 
@@ -116,7 +79,8 @@ const About = () => {
           alt="picture"
           width={800}
           height={1000}
-          className="object-cover opacity-30"
+          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 400px"
+          className="w-full max-w-[400px] h-auto object-cover opacity-30"
         />
       </div>
     </div>
