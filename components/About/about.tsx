@@ -16,12 +16,6 @@ const About = () => {
   const words = ["scalable", "intuitive", "robust", "innovative"];
   const words2 = ["solutions", "experiences", "applications", "platforms"];
   const links = [
-    
-
-    
-    
-    
-
     {
       title: "LinkedIn",
       icon: (
@@ -40,7 +34,7 @@ const About = () => {
 
   return (
     <div
-      className={`${robotoSlab.className} text-gray-300/50 grid grid-cols-1 md:grid-cols-2 gap-6 px-6`}
+      className={`${robotoSlab.className} text-gray-300/50 grid grid-cols-1 md:grid-cols-2 gap-6 px-6 pb-6`}
     >
       {/* Left Section */}
       <div className="flex flex-col justify-center items-center md:items-start space-y-4">

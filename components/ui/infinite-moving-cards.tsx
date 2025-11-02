@@ -78,7 +78,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-[90%] px-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] bg-black/10",
+        "scroller relative z-20 max-w-[90%] px-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] ",
         className
       )}
     >
@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
             className="relative shrink-0 px-2"
             key={item.name}
           >
-            <blockquote className="flex flex-col border-2 rounded-lg p-4 bg-black/50 hover:bg-black/70 transition-colors duration-300">
+            <blockquote className="flex flex-col rounded-full border-0 p-4 bg-zinc-600/20 hover:scale-120 hover:border-0 duration-300">
               {/* This div is likely for a background/border/hover effect */}
               <div
                 aria-hidden="true"

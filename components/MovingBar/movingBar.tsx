@@ -23,7 +23,7 @@ const MovingBar = () => {
   }
 
   return (
-    <div className="h-fit bg-transparent rounded-md flex flex-col antialiased dark:bg-black items-center justify-center relative overflow-hidden">
+    <div className="h-fit bg-transparent rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={tech} // 5. Pass the state to the component
         direction="right"
